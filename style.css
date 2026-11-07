@@ -1,0 +1,42 @@
+:root {
+  --bg: #f6f5fc;
+  --card: #ffffff;
+  --text: #16132a;
+  --muted: #5b5873;
+  --accent: #4338ca;
+  --accent-soft: #ecebfb;
+  --line: #dcdaf0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+header, main, footer { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 20px; padding-bottom: 12px; }
+.brand { font-weight: 800; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+nav a { margin-left: 16px; color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+nav a:hover { color: var(--accent); }
+h1 { font-size: 2rem; line-height: 1.2; margin: 28px 0 8px; }
+h2 { font-size: 1.35rem; margin: 36px 0 10px; }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+p, li { color: var(--text); }
+.lead { font-size: 1.1rem; color: var(--muted); max-width: 640px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; margin: 14px 0; }
+.button { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 12px; font-weight: 700; }
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 14px; }
+.plan { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+.plan h3 { margin-top: 0; }
+.price { font-size: 1.6rem; font-weight: 800; color: var(--accent); }
+.price small { font-size: 0.8rem; font-weight: 500; color: var(--muted); }
+.plan ul { padding-left: 18px; margin: 10px 0 0; font-size: 0.93rem; }
+table { border-collapse: collapse; width: 100%; background: var(--card); border-radius: 12px; overflow: hidden; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 0.93rem; vertical-align: top; }
+th { background: var(--accent-soft); }
+.note { background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; font-size: 0.93rem; }
+footer { padding-top: 32px; padding-bottom: 40px; color: var(--muted); font-size: 0.9rem; }
+footer a { color: var(--muted); margin-right: 14px; }
+.updated { color: var(--muted); font-size: 0.9rem; }
